@@ -37,8 +37,9 @@ share/global/importContainers/
 
 data
 data/
-projects/
 secrets/
 exportContainers/
 importContainers/
 local/
+
+node_modules/

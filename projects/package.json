@@ -1,0 +1,11 @@
+{
+    "main": "index.js",
+    "dependencies": {
+        "express": "*",
+        "ejs": "*",
+        "reload": "JediMindtrick/reload"
+    },
+    "scripts": {
+        "start": "supervisor -e 'html|js' node app.js"
+    }
+}
