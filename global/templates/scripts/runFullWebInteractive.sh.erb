@@ -1,0 +1,9 @@
+docker run -ti -e CONFIG_LOCATION="<%= $local_directories[:local_config][:container] %>" \
+-v <%= $local_directories[:local_config][:vm] %>:<%= $local_directories[:local_config][:container] %> \
+-v <%= $global_directories[:projects][:vm] %>:<%= $global_directories[:projects][:container] %> \
+-p <%= web_port %>:<%= web_port %> \
+full-web \
+/bin/sh -c 'cd <%= $global_directories[:projects][:container] %> && npm start'
+
+#full-web \
+#/bin/sh -c 'cd /home/projects/ && npm start'

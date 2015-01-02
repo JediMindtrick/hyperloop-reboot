@@ -11,5 +11,9 @@ app.get('/', function(req, res){
     res.send('Hello from inside a container!');
 });
 
+app.get('/foo',function(req,res){
+  res.send('bar');
+});
+
 app.listen(cfg.webPort);
 console.log('listening on ' + cfg.webPort);

@@ -6,6 +6,6 @@
         "reload": "JediMindtrick/reload"
     },
     "scripts": {
-        "start": "supervisor -e 'html|js' node app.js"
+        "start": "supervisor -e 'html|js' node index.js"
     }
 }
