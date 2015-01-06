@@ -3,9 +3,12 @@
     "dependencies": {
         "express": "*",
         "ejs": "*",
-        "reload": "JediMindtrick/reload"
+        "reload": "JediMindtrick/reload",
+        "aws-sdk": "*"
     },
     "scripts": {
-        "start": "supervisor -e 'html|js' node index.js"
+        "start:web-skeleton": "supervisor -e 'html|js' node web-skeleton.js",
+        "test:aws": "node test-msg-aws.js",
+        "test": "node test-msg-aws.js"
     }
 }
