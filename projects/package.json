@@ -3,8 +3,10 @@
     "dependencies": {
         "express": "*",
         "ejs": "*",
+        "aws-sdk": "*",
         "reload": "JediMindtrick/reload",
-        "aws-sdk": "*"
+        "body-parser": "*",
+        "method-override": "*"
     },
     "scripts": {
         "start:web-skeleton": "supervisor -e 'html|js' node web-skeleton.js",
